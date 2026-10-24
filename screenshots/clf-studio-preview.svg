@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="100%" stop-color="#101726" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#162032" />
+      <stop offset="100%" stop-color="#0c1322" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)" />
+
+  <!-- Top Navigation Bar -->
+  <rect x="0" y="0" width="1200" height="64" fill="#0c1322" stroke="#27354d" stroke-width="1" />
+  <rect x="24" y="16" width="36" height="32" rx="6" fill="url(#goldGrad)" />
+  <text x="31" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#000">CLF</text>
+  <text x="70" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#f8fafc">ACESCLFStudio Pro</text>
+  <rect x="280" y="20" width="150" height="24" rx="4" fill="#172238" stroke="#334668" stroke-width="1" />
+  <text x="290" y="36" font-family="monospace" font-size="11" fill="#cbd5e1">Academy S-2014-006</text>
+  
+  <rect x="980" y="16" width="180" height="32" rx="6" fill="#10b981" />
+  <text x="1008" y="37" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">✓ 10/10 AUDIT PASS</text>
+
+  <!-- Main Grid -->
+  <!-- Left Panel: Color Pipeline Controls -->
+  <rect x="40" y="88" width="340" height="620" rx="10" fill="url(#cardGrad)" stroke="#27354d" stroke-width="1" filter="url(#shadow)" />
+  <text x="60" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#e2e8f0">Color Pipeline Nodes</text>
+  <line x1="60" y1="136" x2="360" y2="136" stroke="#27354d" stroke-width="1" />
+
+  <!-- Preset Selector -->
+  <text x="60" y="166" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">TRANSFORM PRESET (IDT / ODT)</text>
+  <rect x="60" y="176" width="300" height="36" rx="6" fill="#080c14" stroke="#334668" stroke-width="1" />
+  <text x="72" y="199" font-family="monospace" font-size="12" fill="#f1f5f9">ACEScg (AP1) ➔ Rec.709 (ODT)</text>
+
+  <!-- Spec Version -->
+  <text x="60" y="234" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">CLF SPECIFICATION VERSION</text>
+  <rect x="60" y="244" width="300" height="36" rx="6" fill="#080c14" stroke="#334668" stroke-width="1" />
+  <text x="72" y="267" font-family="monospace" font-size="12" fill="#f1f5f9">Academy S-2014-006 v3.0 (Latest)</text>
+
+  <!-- Sliders -->
+  <text x="60" y="306" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">EXPOSURE (EV STOPS)</text>
+  <line x1="60" y1="324" x2="360" y2="324" stroke="#334668" stroke-width="4" stroke-linecap="round" />
+  <circle cx="210" cy="324" r="8" fill="#f59e0b" />
+  <text x="315" y="316" font-family="monospace" font-size="11" fill="#f59e0b">+0.0 EV</text>
+
+  <text x="60" y="356" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">CONTRAST GAMMA</text>
+  <line x1="60" y1="374" x2="360" y2="374" stroke="#334668" stroke-width="4" stroke-linecap="round" />
+  <circle cx="210" cy="374" r="8" fill="#f59e0b" />
+  <text x="325" y="366" font-family="monospace" font-size="11" fill="#f59e0b">1.00</text>
+
+  <text x="60" y="406" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">SATURATION MULTIPLIER</text>
+  <line x1="60" y1="424" x2="360" y2="424" stroke="#334668" stroke-width="4" stroke-linecap="round" />
+  <circle cx="210" cy="424" r="8" fill="#f59e0b" />
+  <text x="325" y="416" font-family="monospace" font-size="11" fill="#f59e0b">1.00</text>
+
+  <!-- LUT Dimensions -->
+  <text x="60" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">LUT STAGE RESOLUTIONS</text>
+  <rect x="60" y="470" width="140" height="36" rx="6" fill="#080c14" stroke="#334668" stroke-width="1" />
+  <text x="72" y="493" font-family="monospace" font-size="12" fill="#cbd5e1">1D: 64 pts</text>
+
+  <rect x="220" y="470" width="140" height="36" rx="6" fill="#080c14" stroke="#334668" stroke-width="1" />
+  <text x="232" y="493" font-family="monospace" font-size="12" fill="#cbd5e1">3D: 17³ (Cube)</text>
+
+  <!-- Buttons -->
+  <rect x="60" y="530" width="300" height="42" rx="6" fill="url(#goldGrad)" />
+  <text x="135" y="556" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#000">Generate CLF XML</text>
+
+  <rect x="60" y="584" width="300" height="42" rx="6" fill="#334155" />
+  <text x="120" y="610" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#fff">Convert to .cube (Resolve)</text>
+
+  <!-- Right Panel: Code & Audit Inspector -->
+  <rect x="400" y="88" width="760" height="620" rx="10" fill="url(#cardGrad)" stroke="#27354d" stroke-width="1" filter="url(#shadow)" />
+  
+  <!-- Tabs -->
+  <rect x="416" y="104" width="140" height="34" rx="6" fill="#f59e0b" />
+  <text x="435" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#000">CLF XML Editor</text>
+
+  <rect x="566" y="104" width="140" height="34" rx="6" fill="#172238" stroke="#334668" stroke-width="1" />
+  <text x="585" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">Matrix Scope</text>
+
+  <rect x="716" y="104" width="140" height="34" rx="6" fill="#172238" stroke="#334668" stroke-width="1" />
+  <text x="735" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">Resolve .cube</text>
+
+  <rect x="866" y="104" width="140" height="34" rx="6" fill="#172238" stroke="#334668" stroke-width="1" />
+  <text x="888" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#94a3b8">10-Point Audit</text>
+
+  <!-- Code Preview Box -->
+  <rect x="420" y="155" width="720" height="320" rx="6" fill="#050811" stroke="#27354d" stroke-width="1" />
+  <text x="436" y="180" font-family="monospace" font-size="12" fill="#64748b">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</text>
+  <text x="436" y="202" font-family="monospace" font-size="12" fill="#f59e0b">&lt;ProcessList xmlns="urn:AMPAS:CLF:v3.0" id="urn:uuid:7c9e6679-7425-40de-944b-e07fc1f90ae7" compCLFversion="3.0"&gt;</text>
+  <text x="456" y="224" font-family="monospace" font-size="12" fill="#94a3b8">&lt;Description&gt;Generated by ACESCLFStudio Pro (Academy S-2014-006 Compliant)&lt;/Description&gt;</text>
+  <text x="456" y="246" font-family="monospace" font-size="12" fill="#60a5fa">&lt;Matrix inBitDepth="32f" outBitDepth="32f" id="matrix_stage_01"&gt;</text>
+  <text x="476" y="268" font-family="monospace" font-size="12" fill="#38bdf8">&lt;Array dim="3 4"&gt;</text>
+  <text x="496" y="290" font-family="monospace" font-size="12" fill="#cbd5e1">2.52168619 -1.13413099 -0.38755520 0.00000000</text>
+  <text x="496" y="312" font-family="monospace" font-size="12" fill="#cbd5e1">-0.27647991 1.37271909 -0.09623917 0.00000000</text>
+  <text x="496" y="334" font-family="monospace" font-size="12" fill="#cbd5e1">-0.01537806 -0.15297534 1.16835340 0.00000000</text>
+  <text x="476" y="356" font-family="monospace" font-size="12" fill="#38bdf8">&lt;/Array&gt;</text>
+  <text x="456" y="378" font-family="monospace" font-size="12" fill="#60a5fa">&lt;/Matrix&gt;</text>
+  <text x="456" y="400" font-family="monospace" font-size="12" fill="#10b981">&lt;LUT1D inBitDepth="32f" outBitDepth="32f" id="lut1d_shaper_02"&gt; ... &lt;/LUT1D&gt;</text>
+  <text x="456" y="422" font-family="monospace" font-size="12" fill="#8b5cf6">&lt;LUT3D inBitDepth="32f" outBitDepth="32f" id="lut3d_grade_03"&gt; ... &lt;/LUT3D&gt;</text>
+  <text x="436" y="444" font-family="monospace" font-size="12" fill="#f59e0b">&lt;/ProcessList&gt;</text>
+
+  <!-- Live Audit Results Mini-Panel -->
+  <rect x="420" y="490" width="720" height="200" rx="6" fill="#080c14" stroke="#27354d" stroke-width="1" />
+  <rect x="420" y="490" width="720" height="30" rx="6" fill="#101726" />
+  <text x="436" y="510" font-family="monospace" font-size="12" font-weight="700" fill="#94a3b8">ACADEMY S-2014-006 NORMATIVE VALIDATION AUDIT (10/10 PASS)</text>
+
+  <text x="436" y="538" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-01] XML Declaration &amp; Prolog: Valid UTF-8 XML declaration</text>
+  <text x="436" y="556" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-02] ProcessList Root Element: Standard Academy S-2014-006 wrapper</text>
+  <text x="436" y="574" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-03] Namespace: Valid urn:AMPAS:CLF:v3.0 URI declared</text>
+  <text x="436" y="592" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-04] Version: compCLFversion="3.0" present</text>
+  <text x="436" y="610" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-05] Unique Identifier: RFC 4122 urn:uuid conformant</text>
+  <text x="436" y="628" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-06] Process Sequence: Matrix + LUT1D + LUT3D valid chain</text>
+  <text x="436" y="646" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-07] Floating-point bitdepth: 32f input and output declared</text>
+  <text x="436" y="664" font-family="monospace" font-size="11" fill="#10b981">✓ [CLF-08] DaVinci Resolve &amp; OCIO Integration: .cube export validated</text>
+</svg>
